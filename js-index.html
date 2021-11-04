@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="styles/mystyles.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>Hello World!</h1>"); //using HTML tags
+		
+		
+		//this is a var declare and value assigned
+		var name = "Jo";
+		document.write("Hi " + name+ "\n how are you? "); //making use of the variable
+		
+		
+		
+		//rollercoaster height and age check example 1
+		var age;
+		var height;
+			
+			age = parseInt(prompt("Enter your age"));
+			height = parseInt(prompt("Enter height (in cm)"));
+			
+			if((age < 18) || (height < 160)){
+				//if either side is true, dont allow access
+				document.write("<br>Sorry you do not meet the requirements for this ride");
+			}else{document.write("<br>Enjoy the ride");
+			}
+			
+		//guess the number prompt example 2
+		var number;
+		
+			number = parseInt(prompt("Guess a number between 1 and 15"))
+			
+			if((number < 8) && (number > 6)){
+				//the number the person trying is to guess is 7
+				document.write("<br>Congratultaion you guessed the number");
+			}else{document.write("<br>Unlucky refresh to guess again");
+			}
+			
+				
+		
+	
+	</script>
+  </head>
+  <body>
+	<p>my paragraph</p>
+	<a href="page2.html">Page 2</a>
+	
+	
+  </body>
+</html>

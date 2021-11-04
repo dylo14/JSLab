@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="styles/myStyles.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		
+		document.write("<h1>Hello Page 2</h1>"); //using HTML tags
+		
+		//customer loyalty check example 3
+		var money;
+		var time;
+		
+			money = parseInt(prompt("How much money did you spend in the store today (in euro)"));
+			time = parseInt(prompt("How much time did you spend in the store today(in minutes)"));
+			
+			if((money > 50) && (time > 15)){
+				//both sides must be true to qualify for a voucher
+				document.write("<br>Congratulations you qualify for a store voucher");
+			}else{document.write("<br>Continue to shop here for store vouchers");
+			}
+		
+		
+	</script>
+  </head>
+  <body>
+	<p>my paragraph</p>
+	<a href="js-index.html">Back</a>
+	
+  </body>
+</html>
